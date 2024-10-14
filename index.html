@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotiplay</title>
 
-   
     <meta
       name="description"
       content="This Spotiplay clone is a fully responsive music streaming web application built with HTML, CSS, and JavaScript. It replicates the core functionalities of Spotiplay, allowing users to browse and play music with an intuitive and sleek interface. Key features include dynamic audio control, custom playlists, and seamless navigation between music categories. The design focuses on a mobile-first approach, offering an optimal user experience across various devices. This project demonstrates proficiency in front-end development and the use of vanilla JavaScript to enhance user interaction."
@@ -31,48 +30,96 @@
 
     <!-- favicon -->
     <link rel="icon" type="png" href="android-chrome-512x512.png" />
-    
 
     <!-- link css file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-          <nav>
-            
-            <ul>
-              
-              <li class="brand"><img src="logo.png" alt="Spotify logo"> <p>Spotiplay</p> </li>
-                    <!-- search Box  -->
-              <div class="wrap-input-17"><div class="search-box">
-                <button class="btn-search">🔍</button>
-                <input type="text" class="input-search" placeholder="Search for your favorite song ...">
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="logo.png" alt="Spotify logo" />
+          <p>Spotiplay</p>
+        </li>
+        <!-- search Box  -->
+        <div class="wrap-input-17">
+          <div class="search-box">
+            <button class="btn-search">🔍</button>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Search for your favorite song ..."
+            />
+          </div>
+        </div>
+
+        <!-- dark/light mode -->
+        <div class="wrap-check-53">
+          <input
+            class="switch"
+            type="checkbox"
+            id="switch"
+            name="switch"
+            value="private"
+          />
+          <label for="switch">
+            <span class="switch-x-text">Dark mode </span>
+            <span class="switch-x-toggletext">
+              <span class="switch-x-unchecked"
+                ><span class="switch-x-hiddenlabel">Unchecked: </span>Off</span
+              >
+              <span class="switch-x-checked"
+                ><span class="switch-x-hiddenlabel">Checked: </span>On</span
+              >
+            </span>
+          </label>
+        </div>
+      </ul>
+    </nav>
+            <div class="container">
+              <h1>Best of NCS - No Copyright Sounds</h1>
+              <div class="songList"></div>
+              <div class="songBanner"></div>
+
+            </div>
+
+            <div class="bottom">
+              <input type="range" name="range" id="myProgressBar" min="0" max="100">
+              <div class="icons">
+                <!-- here my icons -->
+                <i class="fa-duotone fa-2x fa-solid fa-backward-step" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i>
+
+                <i class="fa-duotone fa-2x fa-solid fa-circle-play" style="--fa-primary-color: #ffffff; --fa-secondary-color:#000000; --fa-secondary-opacity: 1;"></i>
+                <i class="fa-duotone fa-2x fa-solid fa-forward-step" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i>
               </div>
-              </div>
 
-              <!-- dark/light mode -->
-              <div class="wrap-check-53">
-                <input class="switch" type="checkbox" id="switch" name="switch" value="private">
-                <label for="switch">
-                  <span class="switch-x-text">Dark mode </span>
-                  <span class="switch-x-toggletext">
-                    <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>Off</span>
-                    <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>On</span>
-                  </span>
-                </label>
-              </div>
-            </ul>
-          </nav>
+            </div>
+
+<!-- footer part -->
+<div class="footer">
+  <div class="footer-content">
+    <h5>Questions? Mail us: <a href="mailto:support.spotiplay@gmail.com">support.spotiplay@gmail.com</a></h5>
+    <div class="socials">
+      <a href="https://www.instagram.com/thatodiapila/?hl=en" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100032399091505" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/amit-web-developer/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+  <p class="copyright-txt">
+   <b>@Spotiplay </b>- by : Amit Kumar Patra
+  </p>
+</div>
 
 
-
-
-
-
-
-
-
-
-          <!-- linking  javascript -->
-          <script src="script.js"></script>
+<!-- Fontawesomeicon kit -->
+<script src="https://kit.fontawesome.com/3cec989f37.js" crossorigin="anonymous"></script>
+    <!-- linking  javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
