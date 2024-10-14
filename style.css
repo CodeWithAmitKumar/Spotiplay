@@ -250,6 +250,7 @@ nav ul li {
   width: 80vw;
 }
 
+/* footer part start */
 .footer {
   background-color: rgba(14, 14, 15, 0.842);
   color: #ffffff;
@@ -304,3 +305,4 @@ nav ul li {
   text-align: center;
   font-size: 14px;
 }
+/* end footer part */
