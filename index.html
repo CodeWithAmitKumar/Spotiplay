@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My_Spotify</title>
+
+   
     <meta
       name="description"
       content="This Spotify clone is a fully responsive music streaming web application built with HTML, CSS, and JavaScript. It replicates the core functionalities of Spotify, allowing users to browse and play music with an intuitive and sleek interface. Key features include dynamic audio control, custom playlists, and seamless navigation between music categories. The design focuses on a mobile-first approach, offering an optimal user experience across various devices. This project demonstrates proficiency in front-end development and the use of vanilla JavaScript to enhance user interaction."
@@ -36,10 +38,28 @@
   </head>
   <body>
           <nav>
+            
             <ul>
-              <li class="brand"><img src="logo.png" alt="Spotify logo"></li>
-              <li>Home</li>
-              <li>About</li>
+              
+              <li class="brand"><img src="logo.png" alt="Spotify logo"> <p>Spotify</p> </li>
+                    <!-- search Box  -->
+              <div class="wrap-input-17"><div class="search-box">
+                <button class="btn-search">🔍</button>
+                <input type="text" class="input-search" placeholder="Search for your favorite song ...">
+              </div>
+              </div>
+
+              <!-- dark/light mode -->
+              <div class="wrap-check-53">
+                <input class="switch" type="checkbox" id="switch" name="switch" value="private">
+                <label for="switch">
+                  <span class="switch-x-text">Dark mode </span>
+                  <span class="switch-x-toggletext">
+                    <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>Off</span>
+                    <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>On</span>
+                  </span>
+                </label>
+              </div>
             </ul>
           </nav>
 
