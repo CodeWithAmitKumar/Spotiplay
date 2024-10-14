@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 body {
   background-color: rgb(236, 215, 189);
@@ -215,23 +214,20 @@ nav ul li {
   padding: 0 14px;
 }
 
-.container{
+.container {
   min-height: 73vh;
   background-color: black;
   color: white;
-  font-family: "Josefin Sans", sans-serif;;
+  font-family: "Josefin Sans", sans-serif;
   display: flex;
   margin: 24px auto;
   width: 72%;
   border-radius: 13px;
   padding: 34px;
-  background-image: url(bg.jpeg) ;
-
- 
+  background-image: url(bg.jpeg);
 }
 
-
-.bottom{
+.bottom {
   position: sticky;
   height: 140px;
   background-color: black;
@@ -242,23 +238,22 @@ nav ul li {
   flex-direction: column;
   margin: 0 40px;
   border-radius: 15px;
- 
 }
-.icons{
+.icons {
   margin-top: 15px;
 }
-.icons i{
+.icons i {
   cursor: pointer;
 }
 
-#myProgressBar{
+#myProgressBar {
   width: 80vw;
 }
 
 .footer {
   background-color: rgba(14, 14, 15, 0.842);
   color: #ffffff;
-  margin-top: .5px;
+  margin-top: 0.5px;
   padding: 12px 0;
   display: flex;
   flex-direction: column;
@@ -309,4 +304,3 @@ nav ul li {
   text-align: center;
   font-size: 14px;
 }
-
