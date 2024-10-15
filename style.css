@@ -6,6 +6,10 @@ body {
   background-color: rgb(236, 215, 189);
 }
 
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -208,6 +212,15 @@ p {
   opacity: 1;
   -webkit-transform: none;
   transform: none;
+}
+
+body.light-theme {
+  background-color: rgb(236, 215, 189); /* Your current light background color */
+}
+
+body.dark-theme {
+  background-color: #141313; /* Example dark background color */
+  color: white; /* Change text color for better contrast */
 }
 
 nav ul li {
