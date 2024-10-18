@@ -337,11 +337,16 @@ nav ul li {
   font-size: 14px;
 }
 /* end footer part */
+
+.songItemContainer{
+
+  margin-top: 50px;
+}
 .songItem{
   display: flex;
-  height: 50px;
+  height: 54px;
   background-color: white;
-  width: 80%;
+  width: 89%;
   color: black;
   margin: 13px 0;
   justify-content: space-between;
@@ -355,4 +360,11 @@ nav ul li {
 }
 .timeStamp{
   margin: 0 22px;
+}
+.timeStamp i{
+  cursor: pointer;
+}
+.DownloadBtn{
+  margin-right: 26px;
+  cursor: pointer;
 }
