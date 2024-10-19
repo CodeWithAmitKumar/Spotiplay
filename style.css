@@ -35,13 +35,14 @@ nav ul {
   display: flex;
   align-items: center;
   font-size: 1.67rem;
+  cursor:pointer;
 }
 
 .brand img {
   width: 38px;
 }
 
-p {
+.brand p {
   padding: 0 10px;
 }
 
@@ -368,3 +369,18 @@ nav ul li {
   margin-right: 26px;
   cursor: pointer;
 }
+.songInfo{
+  margin-top: 33px;
+  position: absolute;
+  left: 7.5vw;
+
+  
+}
+/* .songInfo p{
+margin-left: 70px;
+} */
+.songInfo img{
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
