@@ -72,6 +72,7 @@ audioElement.addEventListener('timeupdate', ()=> {
   
 })
 
+// click betweeen the progressbar and play where it clicks setup
 myProgressBar.addEventListener('change', ()=> {
   audioElement.currentTime = (myProgressBar.value * audioElement.duration)/100;
 })
