@@ -27,6 +27,7 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay')
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
+let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 // songs Array
 let songs = [
@@ -41,6 +42,14 @@ let songs = [
   {songName: "Lut Gaye", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
   {songName: "Tu Mo Love Story", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
 ]
+
+songItems.forEach((element, i)=>{
+  console.log(element, i);
+  element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+  element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+
+
+})
 // audioElement.play();
 
 //handle play/pause click
