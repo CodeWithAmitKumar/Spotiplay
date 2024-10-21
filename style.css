@@ -253,7 +253,7 @@ nav ul li {
     url(bg.jpeg); /* Darken background slightly */
   background-size: cover;
   background-position: center;
-  filter: blur(5px); /* Apply blur to the image */
+  filter: blur(1px); /* Apply blur to the image */
   z-index: -1; /* Ensure it's behind the text */
   border-radius: 13px; /* Keep the border-radius consistent */
 }
@@ -281,6 +281,8 @@ nav ul li {
   width: 80vw;
   cursor: pointer;
 }
+
+
 
 /* footer part start */
 .footer {
