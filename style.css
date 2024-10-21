@@ -282,8 +282,6 @@ nav ul li {
   cursor: pointer;
 }
 
-
-
 /* footer part start */
 .footer {
   background-color: rgba(14, 14, 15, 0.842);
@@ -370,12 +368,12 @@ nav ul li {
   margin-right: 26px;
   cursor: pointer;
 }
+
 .songInfo {
   margin-top: 33px;
   position: absolute;
   left: 7.5vw;
   font-family: "Kanit", sans-serif;
-
 }
 .songInfo img {
   opacity: 0;
