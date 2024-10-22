@@ -172,3 +172,37 @@ audioElement.addEventListener("ended", () => {
   gif.style.opacity = 0;  // Hide GIF when the song ends
   myProgressBar.value = 0;  // Reset progress bar
 });
+
+// Next button setup
+document.getElementById("next").addEventListener('click', () => {
+  if (songIndex >= 9) {
+    songIndex = 0;
+  } else {
+    songIndex += 1;
+  }
+
+  audioElement.src = songs[songIndex].filePath;
+  audioElement.currentTime = 0;  // Reset song time
+  audioElement.play();
+
+  masterPlay.classList.remove("fa-play-circle");
+  masterPlay.classList.add("fa-pause-circle");
+  gif.style.opacity = 1;  // Show GIF when playing
+});
+
+// Previous button setup
+document.getElementById("previous").addEventListener('click', () => {
+  if (songIndex <= 0) {
+    songIndex = 0;
+  } else {
+    songIndex -= 1;
+  }
+
+  audioElement.src = songs[songIndex].filePath;
+  audioElement.currentTime = 0;  // Reset song time
+  audioElement.play();
+
+  masterPlay.classList.remove("fa-play-circle");
+  masterPlay.classList.add("fa-pause-circle");
+  gif.style.opacity = 1;  // Show GIF when playing
+});
