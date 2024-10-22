@@ -30,6 +30,7 @@ let songIndex = 0;
 let audioElement = new Audio("songs/1.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
+let masterSongName = document.getElementById("masterSongName");
 let gif = document.getElementById("gif");
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 
@@ -155,6 +156,8 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
       e.target.classList.add("fa-circle-pause");
 
       audioElement.src = songs[songIndex].filePath;
+      masterSongName.innerText=songs[songIndex].songName;
+
       audioElement.currentTime = 0;  // Reset song time
       audioElement.play();
 
@@ -182,6 +185,8 @@ document.getElementById("next").addEventListener('click', () => {
   }
 
   audioElement.src = songs[songIndex].filePath;
+  masterSongName.innerText=songs[songIndex].songName;
+
   audioElement.currentTime = 0;  // Reset song time
   audioElement.play();
 
@@ -199,6 +204,7 @@ document.getElementById("previous").addEventListener('click', () => {
   }
 
   audioElement.src = songs[songIndex].filePath;
+  masterSongName.innerText=songs[songIndex].songName;
   audioElement.currentTime = 0;  // Reset song time
   audioElement.play();
 
